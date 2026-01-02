@@ -1,0 +1,33 @@
+{
+    "name": "facebook-auto",
+    "version": "1.0.0",
+    "description": "Automated TikTok to Facebook content repurposing system",
+    "main": "src/index.js",
+    "type": "module",
+    "scripts": {
+        "start": "node src/index.js",
+        "dev": "node src/index.js --run-once",
+        "test:tiktok": "node src/modules/tiktokScraper.js --test",
+        "test:download": "node src/modules/videoDownloader.js --test",
+        "test:ai": "node src/modules/aiGenerator.js --test",
+        "test:facebook": "node src/modules/facebookUploader.js --test"
+    },
+    "dependencies": {
+        "@google/generative-ai": "^0.24.1",
+        "apify-client": "^2.9.0",
+        "axios": "^1.6.0",
+        "dotenv": "^16.3.1",
+        "form-data": "^4.0.0",
+        "node-cron": "^3.0.3",
+        "sql.js": "^1.10.0",
+        "winston": "^3.11.0"
+    },
+    "keywords": [
+        "tiktok",
+        "facebook",
+        "automation",
+        "social-media"
+    ],
+    "author": "",
+    "license": "MIT"
+}
